@@ -27,6 +27,8 @@ public class CheckBoxActivity extends AppCompatActivity {
             CheckBox plutoCb = findViewById(R.id.pluto_cb);
             if (mercuryCb.isChecked() && jupiterCb.isChecked() && saturnCb.isChecked() &&  sunCb.isChecked() == false && moonCb.isChecked() == false && plutoCb.isChecked() == false) {
                 Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
+            } else if (mercuryCb.isChecked() == false && jupiterCb.isChecked() == false && saturnCb.isChecked()  == false &&  sunCb.isChecked() == false && moonCb.isChecked() == false && plutoCb.isChecked() == false) {
+                Toast.makeText(this, "Please select the options", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(this, "Not Correct", Toast.LENGTH_SHORT).show();
             }
