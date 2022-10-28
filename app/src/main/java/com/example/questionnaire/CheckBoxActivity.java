@@ -30,7 +30,7 @@ public class CheckBoxActivity extends AppCompatActivity {
             } else if (mercuryCb.isChecked() == false && jupiterCb.isChecked() == false && saturnCb.isChecked()  == false &&  sunCb.isChecked() == false && moonCb.isChecked() == false && plutoCb.isChecked() == false) {
                 Toast.makeText(this, "Please select the options", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Not Correct", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Wrong", Toast.LENGTH_SHORT).show();
             }
         });
     }
